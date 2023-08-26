@@ -17,7 +17,7 @@ MYIP=$(wget -qO- ipinfo.io/ip);
 
 apt install rclone -y
 printf "q\n" | rclone config
-wget -O /root/.config/rclone/rclone.conf "https://raw.githubusercontent.com/putrahss/julakhss/main/JB2/rclone.conf"
+wget -O /root/.config/rclone/rclone.conf "https://raw.githubusercontent.com/bosqu93/backup/main/rclone.conf"
 #Install Wondershaper
 cd /bin
 git clone  https://github.com/magnific0/wondershaper.git
@@ -44,12 +44,12 @@ logfile ~/.msmtp.log
 EOF
 chown -R www-data:www-data /etc/msmtprc
 cd /usr/bin
-wget -O autobackup "https://raw.githubusercontent.com/putrahss/julakhss/main/JB2/autobackup.sh"
-wget -O backup "https://raw.githubusercontent.com/putrahss/julakhss/main/JB2/backup.sh"
-wget -O restore "https://raw.githubusercontent.com/putrahss/julakhss/main/JB2/restore.sh"
-wget -O strt "https://raw.githubusercontent.com/putrahss/julakhss/main/JB2/strt.sh"
-wget -O limitspeed "https://raw.githubusercontent.com/putrahss/julakhss/main/JB2/limitspeed.sh"
-wget -O xp "https://raw.githubusercontent.com/putrahss/sc3/main/ssh/xp.sh"
+wget -O autobackup "https://raw.githubusercontent.com/bosqu93/backup/main/autobackup.sh"
+wget -O backup "https://raw.githubusercontent.com/bosqu93/backup/main/backup.sh"
+wget -O restore "https://raw.githubusercontent.com/bosqu93/backup/main/restore.sh"
+wget -O strt "https://raw.githubusercontent.com/bosqu93/backup/main/strt.sh"
+wget -O limitspeed "https://raw.githubusercontent.com/bosqu93/backup/main/limitspeed.sh"
+wget -O xp "https://raw.githubusercontent.com/bosqu93/v5/main/ssh/xp.sh"
 
 chmod +x autobackup
 chmod +x backup
